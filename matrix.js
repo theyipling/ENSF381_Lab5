@@ -1,7 +1,7 @@
 function generateMatrices() {
     createMatrix('The 1st Matrix', 'matrix1', document.getElementById('matrix1Rows').value, document.getElementById('matrix1Cols').value);
     createMatrix('The 2nd Matrix','matrix2', document.getElementById('matrix2Rows').value, document.getElementById('matrix2Cols').value);
-}
+};
 
 const createMatrix = (title, containerId, rows, cols) => {
     let container = document.getElementById(containerId);
@@ -155,6 +155,7 @@ function addMatrices(matrix1, matrix2){
     }
     return result;
 }
+
 const subtractMatrices = function (matrix1, matrix2) { 
 	if (matrix1.length !== matrix2.length || matrix1[0].length !== matrix2[0].length) {
         alert("Error: Matrix dimensions mismatch for subtraction");
@@ -171,6 +172,7 @@ const subtractMatrices = function (matrix1, matrix2) {
     }
     return result;
 }
+
 const multiplyMatrices = (matrix1, matrix2) => { 
 	if (matrix1[0].length !== matrix2.length) {
         alert("Error: Matrix dimensions mismatch for multiplication");
