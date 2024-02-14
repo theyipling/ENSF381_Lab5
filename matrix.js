@@ -72,7 +72,7 @@ const showResult2D = (title, containerId, dataArray) => {
     let caption = table.createCaption();
     caption.textContent = title;
     container.appendChild(table);
-}
+};
 
 function performOperation(operation) {
     let matrix1 = getMatrixData2D('matrix1');
@@ -103,7 +103,7 @@ function performOperation(operation) {
     }
 
     //showResult('The Result', 'matrix3', 2, 4, result); // use suitable function for printing results
-}
+};
 
 const getMatrixData1D = function (matrixId) {
     let matrixData = [];
@@ -112,7 +112,7 @@ const getMatrixData1D = function (matrixId) {
         matrixData.push(parseInt(input.value, 10));
     });
     return matrixData;
-}
+};
 
 const getMatrixData2D = function (matrixId) {
     let matrixData = [];
@@ -134,7 +134,7 @@ const getMatrixData2D = function (matrixId) {
         matrixData.push(rowData);
     }
     return matrixData;
-}
+};
 
 
 // Add your matrix calculation functions here
@@ -154,7 +154,7 @@ function addMatrices(matrix1, matrix2){
         result.push(row);
     }
     return result;
-}
+};
 
 const subtractMatrices = function (matrix1, matrix2) { 
 	if (matrix1.length !== matrix2.length || matrix1[0].length !== matrix2[0].length) {
@@ -171,7 +171,7 @@ const subtractMatrices = function (matrix1, matrix2) {
         result.push(row);
     }
     return result;
-}
+};
 
 const multiplyMatrices = (matrix1, matrix2) => { 
 	if (matrix1[0].length !== matrix2.length) {
@@ -192,4 +192,4 @@ const multiplyMatrices = (matrix1, matrix2) => {
         result.push(row);
     }
     return result;
-}
+};
